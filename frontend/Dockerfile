@@ -25,6 +25,8 @@ COPY --from=build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy entrypoint script to dynamically generate config.js
 COPY entrypoint.sh /entrypoint.sh
+RUN ls -l /
+
 
 # Make entrypoint script executable
 RUN chmod +x /entrypoint.sh
