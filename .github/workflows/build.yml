@@ -34,7 +34,7 @@ jobs:
         with:
           context: backend
           push: true
-          tags: etoosamoe/eto-backend:latest
+          tags: mr3balls/eto-backend:latest
           labels: ${{ steps.meta.outputs.labels }}
 
   build-frontend:
@@ -64,5 +64,5 @@ jobs:
         with:
           context: frontend
           push: true
-          tags: etoosamoe/eto-frontend:latest
+          tags: mr3balls/eto-frontend:latest
           labels: ${{ steps.meta.outputs.labels }}
