@@ -46,7 +46,6 @@ def get_db():
 async def root():
    return {"message": "Hello World"}
 
-
 @app.get("/docs")
 def main():
     return RedirectResponse(url="/docs/")
@@ -125,3 +124,8 @@ def flaky_endpoint():
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
     return {"message": "OK"}
+
+# === Новый тестовый эндпоинт ===
+@app.get("/api/hello")
+def say_hello():
+    return {"message": "Hello from eto-app!"}
