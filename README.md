@@ -7,6 +7,7 @@ Simple application to train some programming and DevOps skills. It contains:
 - Frontend (NodeJS, React)
 - Database (default - local SQLite file)
 
+
 ## Backend
 
 Base API CRUD Python application, working with fastapi, sqlalchemy, pydantic.
